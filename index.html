@@ -493,14 +493,11 @@
       //var slotConfig = {allowOverlayExpansion: false};
 
   googletag.pubads().setSafeFrameConfig(pageConfig);
-
-
         googletag.pubads().addEventListener('slotRenderEnded', function(event) {
             if(event.slot.getAdUnitPath() == arrAds[0])
             {
                 dqs('#div-gpt-ad-1551357349271-9 div iframe').onload = function(){ 
                     document.getElementById('top_news_ads1').style.display = 'block';
-                    var _gl_iFrame1BODY = _gl_iFrame1.contentWindow.document.body;
                 }
             }
 
