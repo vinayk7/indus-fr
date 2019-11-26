@@ -500,101 +500,17 @@
             {
                 dqs('#div-gpt-ad-1551357349271-9 div iframe').onload = function(){ 
                     document.getElementById('top_news_ads1').style.display = 'block';
-
-                    _gl_iFrame1 = this;
-
-                    setTimeout(function(){
-                            debugger
-                        alert(_gl_iFrame1.getElementsByTagName('iframe').length)
-                    },12000);
-
-
-                    for(var key in _gl_iFrame1){
-                        if(key.search('on') === 0) {
-                           _gl_iFrame1.addEventListener(key.slice(2), function(){
-
-                            alert('_gl_iFrame1| event: '+ key.slice(2))
-                           });
-                        }
-                    }
-                    
                     var _gl_iFrame1BODY = _gl_iFrame1.contentWindow.document.body;
-
-                    console.log(_gl_iFrame1BODY);
-
-
-                    for(var key in _gl_iFrame1BODY){
-                        if(key.search('on') === 0) {
-                           _gl_iFrame1BODY.addEventListener(key.slice(2), function(){
-
-                            if( key.slice(2) != 'spatchEvent')
-                            alert('_gl_iFrame1BODY| event: '+ key.slice(2))
-                           });
-                        }
-                    }
-
                 }
-
-                // dqs('#div-gpt-ad-1551357349271-9 div iframe').contentWindow.document.body.onclick = function(){ 
-                //     alert('iframe');
-                // }
-
             }
 
             if(event.slot.getAdUnitPath() == arrAds[1])
             {
                 dqs('#div-gpt-ad-1565767605361-0 div iframe').onload = function(){
                     document.getElementById('top_news_ads2').style.display = 'block';
-
-                    _gl_iFrame2 = this;
-                        setTimeout(function(){
-                            debugger
-                        alert(_gl_iFrame2.getElementsByTagName('iframe').length)
-                    },12000);
-
-
-
-
-                    for(var key in _gl_iFrame2){
-                        if(key.search('on') === 0) {
-                           _gl_iFrame2.addEventListener(key.slice(2), function(){
-                            if( key.slice(2) != 'spatchEvent')
-                            alert('_gl_iFrame2| event: '+ key.slice(2))
-                           });
-                        }
-                    }
-
-
-                    
-                    var _gl_iFrame2BODY = _gl_iFrame2.contentWindow.document.body;
-
-                    console.log(_gl_iFrame2BODY);
-
-                    
-                    for(var key in _gl_iFrame2BODY){
-                        if(key.search('on') === 0) {
-                           _gl_iFrame2BODY.addEventListener(key.slice(2), function(){
-                            if( key.slice(2) != 'spatchEvent')
-                            alert('_gl_iFrame2BODY| event: '+ key.slice(2))
-                           });
-                        }
-                    }
-
                 }
-
-                // dqs('#div-gpt-ad-1565767605361-0 div iframe').contentWindow.document.body.onclick = function(){ 
-                //     alert('iframe');
-                // }
-
-
-
-                
             }
         });
-
-        // googletag.pubads().addEventListener('slotVisibilityChanged', function(event) {
-        //     alert();
-        // });
 
         adSlot1 = googletag.defineSlot('/42115163/IP_start.indusos.com_320X100_Mobile', [[300, 100], [768,100], [144, 100], [320, 100], [375, 100], [1024, 100]], "div-gpt-ad-1551357349271-9")
         //.setSafeFrameConfig(slotConfig)
